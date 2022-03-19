@@ -17,14 +17,50 @@ class _cardsState extends State<cards> {
         children: [
           Center(
               child: Container(
+                  height: 100,
+                  width: 100,
+                  margin: const EdgeInsets.fromLTRB(130, 0, 0, 450),
                   decoration: const BoxDecoration(
                       image: DecorationImage(
-            image: AssetImage("assets/Layer 1-Recovered.png"),
-            // fit: BoxFit.cover,
-          ))))
+                    image: AssetImage("assets/Layer 1-Recovered.png"),
+                  )))),
+          // ignore: prefer_const_literals_to_create_immutables
+          // Column(children: [
+          //   const TextField(
+          //     decoration: InputDecoration(),
+          //   )
+          // ])
+          // Container(
+          //     padding: const EdgeInsets.only(
+          //         // top: MediaQuery.of(context).size.height * 0.5,
+          //         right: 70,
+          //         left: 70),
+          //     child: Column(children: [
+          //       TextField(
+          //         decoration: InputDecoration(
+          //           fillColor: Colors.white,
+          //           filled: true,
+          //           hintText: 'Email',
+          //           border: OutlineInputBorder(
+          //               borderRadius: BorderRadius.circular(50)),
+          //         ),
+          //       ),
+          //       const SizedBox(
+          //         height: 50,
+          //       ),
+          //       TextField(
+          //         obscureText: true,
+          //         decoration: InputDecoration(
+          //           fillColor: Colors.white,
+          //           filled: true,
+          //           hintText: 'Password',
+          //           border: OutlineInputBorder(
+          //               borderRadius: BorderRadius.circular(50)),
+          //         ),
+          //       ),
+          //     ]))
         ],
       ),
-      // shadowColor: Colors.black12,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       elevation: 10,
     );
